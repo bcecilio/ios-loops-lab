@@ -13,6 +13,7 @@
 ## Question 1
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
+
 Answer
 ```
 for number in 1...150 {
@@ -23,6 +24,7 @@ print(number)
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
+
 Answer
 ```
 for number in 142..<160 {
@@ -33,6 +35,7 @@ print(number)
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
+
 Answer
 ```
 for number in 15...80 {
@@ -45,6 +48,7 @@ for number in 15...80 {
 ## Question 4
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
+
 Answer
 ```
 for number in 19...51 {
@@ -57,6 +61,7 @@ for number in 19...51 {
 ## Question 5
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
+
 Answer
 ```
 for number in 1..<101 where number % 10 == 5 {
@@ -67,6 +72,7 @@ for number in 1..<101 where number % 10 == 5 {
 ## Question 6
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
+
 Answer
 ```
 for number in 1...40 where number % 10 == 7{
@@ -159,7 +165,11 @@ Answer
 var i = 5
 
 while (i > 3) {
-    i -= 9 
+    print(i)
+    i += 1
+    if i == 10 {
+        break
+    }
 }
 ```
 
@@ -179,11 +189,13 @@ Answer
 ```
 var i = 5
 
-for _ in 0...1000{
 while (i > 3) {
+    print(i)
     i += 1
+    if i == 1001 {
+        break
     }
-    }
+}
 ```
 
 ***
@@ -203,10 +215,11 @@ Answer
 var i = 5
 
 while (i > 3) {
-    print(i)
     i += 1
-    if i == 1000 {
+    if i % 2 == 0 {
+    if i == 1001 {
         break
+        }
     }
 }
 ```
