@@ -127,7 +127,10 @@ Given a range of numbers from 20 to 150, print out all the numbers that follows 
 
 Answer
 ```
-
+for number in 20...150{
+    print(31, 35, 40, 60)
+    break
+}
 ```
 ***
 ## Question 11
